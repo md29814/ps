@@ -6,3 +6,4 @@ venv
 *.log
 vagrant
 .idea/vcs.xml
+Vagrantfile
