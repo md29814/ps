@@ -1,0 +1,8 @@
+{
+  "smtp_address": "smtp.poczta.onet.pl",
+  "pop3_address": "pop3.poczta.onet.pl",
+  "smtp_port": 587,
+  "pop3_port": 110,
+  "username": "qwdwdw1@onet.pl",
+  "password": "Qwertyuiop12"
+}
