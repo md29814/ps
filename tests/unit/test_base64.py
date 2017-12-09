@@ -42,6 +42,7 @@ class Base64Test(unittest.TestCase):
         with open('/project/base64.txt', 'r') as file:
             content = file.read()
         encoded_str_by_external_lib = base64.b64encode(content.encode('utf-8')).decode("utf-8")
+
         # When
         better_encoded_str = BetterBase64.encode(content)
 

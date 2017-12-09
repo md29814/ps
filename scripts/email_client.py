@@ -30,7 +30,7 @@ class EmailClient:
         last_email = recv[len(recv)-12:-10]
         take_one = "RETR {number}\r\n".format(number=last_email)
         recv = self._send(take_one)
-        searchObj = re.search(r'Subject: (.*)\.', recv)
+        searchObj = re.search(r'Subject: (.*)', recv)
 
         if searchObj:
             print("Subject:     ", searchObj.group(1))

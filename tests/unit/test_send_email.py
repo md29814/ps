@@ -9,7 +9,7 @@ import datetime
 from scripts.email_client import EmailClient
 
 
-class EmailClientTest(unittest.TestCase):
+class TestSendEmail(unittest.TestCase):
     """
     EmailClient tests
     """
@@ -36,9 +36,3 @@ class EmailClientTest(unittest.TestCase):
         """
 
         self._email_client.send_email("Subject {}".format(datetime.datetime.now()), "Message")
-
-    def test_receive_emial(self):
-        """
-        Receive emial
-        """
-        self._email_client.receive_email()
